@@ -2,8 +2,7 @@
 Based on Mysql
 
 ## Remarque
-Quelques problèmes de devops et de react m'ont empecher de terminer complètement le developpemnt
-donn je me suis limiter a l'essentiel
+Quelques problèmes de devons et de react m'ont empêché de terminer complètement le développement donc je me suis limité à l'essentiel
 
 ## Installation
 
