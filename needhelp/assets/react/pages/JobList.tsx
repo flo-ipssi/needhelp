@@ -22,7 +22,7 @@ const JobList: React.FC<Props> = () => {
     }, []);
     return (
         <>
-            <div className="flex h-60 overflow-y-scroll items-center justify-center bg-white px-6 md:px-60">
+            <div className="flex h-screen overflow-y-scroll items-center justify-center bg-white px-6 md:px-60">
                 <div className="space-y-6 border-l-2 border-dashed">
                     {joblist
                         ? joblist.map((job) => (

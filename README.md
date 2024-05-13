@@ -24,8 +24,7 @@ $ docker-compose up -d
 $ cd needhelp
 $ composer install
 $ npm install
-$ npm build
-$ npm build
+$ npm run build
 
 ```
 #### Step 4 - Création de la base de donnée et des fixtures
