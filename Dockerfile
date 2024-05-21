@@ -18,9 +18,6 @@ WORKDIR /var/www/htm
 
 COPY . /var/www/html
 
-# Install PHP dependencies using composer
-RUN composer install --no-interaction --optimize-autoloader --no-scripts
-
 RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE 9000
