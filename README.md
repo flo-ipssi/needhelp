@@ -1,8 +1,5 @@
 # NeedHelp Project
-Based on Mysql
-
-## Remarque
-Quelques problèmes de devons et de react m'ont empêché de terminer complètement le développement donc je me suis limité à l'essentiel
+Based on Mysql NGINX Node PHP8 Phpmyadmin
 
 ## Installation
 
@@ -18,19 +15,10 @@ $ git clone https://github.com/flo-ipssi/needhelp.git
 $ docker-compose up -d
 ```
 
-#### Step 3 - Installation des dependances et déploiement
+#### Step 3 - Création de la base de donnée et des fixtures
 
 ```
-$ cd needhelp
-$ composer install
-$ npm install
-$ npm run build
-
-```
-#### Step 4 - Création de la base de donnée et des fixtures
-
-```
-$ cd needhelp
+$ docker exec -it php bash
 $ php bin/console doctrine:database:create
 $ php bin/console doctrine:migrations:migrate
 $ php bin/console doctrine:fixtures:load
@@ -39,13 +27,5 @@ $ php bin/console doctrine:fixtures:load
 
 #### Step 5 - Lancement de l'application
 
-```
-$ symfony server:start
-```
-OU
-
-```
-$ php bin/console server:start
-```
-Le serveur devrait se lancer sur [http://localhost:8000](http://localhost:8000).
+Le serveur devrait se lancer sur [http://localhost](http://localhost).
 
